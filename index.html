@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affandi Anugrah</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="key.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Profile -->
+    <img class="my-photo" src="./img/profile.jpg" alt="AR Logo">
+    <h1>Affandi Anugrah</h1>
+
+    <!-- Sosial Media -->
+    <div class="sosmed">
+        <a href="https://s.id/fandii" target="_blank">
+            <i class="ph ph-globe-simple"></i>
+        </a>
+        <a href="https://wa.me/6289654791642" target="_blank">
+            <i class="ph ph-whatsapp-logo"></i>
+        </a>
+        <a href="https://instagram.com/affandiiangrhh._" target="_blank">
+            <i class="ph ph-instagram-logo"></i>
+        </a>
+        <a href="https://instagram.com/affandiiangrhh._" target="_blank">
+            <i class="ph ph-github-logo"></i>
+        </a>
+    </div>
+
+    <!-- Link List -->
+    <ul class="links">
+        <li>
+            <a href="https://s.id/fandii" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph-fill ph-globe-simple"></i>
+                </div>
+                <p class="link-text">Portofolio</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://api.whatsapp.com/send?phone=6289654791642" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph-fill ph-whatsapp-logo"></i>
+                </div>
+                <p class="link-text">WhastApp</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/affandiiangrhh._" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                </div>
+                <p class="link-text">Instagram</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://t.me/takastok" target="_blank" class="link-card">
+                <div class="link-icon">
+                    <i class="ph ph-github-logo"></i>
+                </div>
+                <p class="link-text">Github</p>
+                <div class="link-action">
+                    <i class="ph-fill ph-copy"></i>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Footer -->
+    <div class="copyright">
+        <p>Copyright fandii &copy; 2023</p>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast">
+    </div>
+
+    <!-- JS File -->
+    <script src="./assets/script.js"></script>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</body>
+
+</html>
+
+<!-- Key -->
+<script>
+    // take body to change the content
+const body = document.getElementsByTagName('body');
+// stop keyboard shortcuts
+window.addEventListener("keydown", (event) => {
+  if(event.ctrlKey && (event.key === "S" || event.key === "s")) {
+     event.preventDefault();
+    toastr.warning('Upss! Halaman Ini Tidak Bisa Di Inspeksi.');
+  }
+
+  if(event.ctrlKey && (event.key === "C")) {
+     event.preventDefault();
+    toastr.error('Lengkapi Seluruh Data');
+  }
+  if(event.ctrlKey && (event.key === "E" || event.key === "e")) {
+     event.preventDefault();
+    toastr.warning('Upss! Halaman Ini Tidak Bisa Di Inspeksi.');
+  }
+  if(event.ctrlKey && (event.key === "I" || event.key === "i")) {
+     event.preventDefault();
+    toastr.warning('Upss! Halaman Ini Tidak Bisa Di Inspeksi.');
+  }
+  if(event.ctrlKey && (event.key === "K" || event.key === "k")) {
+     event.preventDefault();
+    toastr.warning('Upss! Halaman Ini Tidak Bisa Di Inspeksi.');
+  }
+  if(event.ctrlKey && (event.key === "U" || event.key === "u")) {
+     event.preventDefault();
+    toastr.warning('Upss! Halaman Ini Tidak Bisa Di Inspeksi.');
+  }
+});
+// stop right click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+ toastr.warning('Upss! Halaman Ini Tidak Bisa Di Inspeksi.');
+});
+</script>
+
+    <script>
+        $(document).ready(function () {
+            $('#popupModal').modal('show');
+        });
+
+        // Fungsi untuk menutup modal saat tombol "Tutup" diklik
+        function closePopupModal() {
+            $('#popupModal').modal('hide');
+        }
+    </script>
